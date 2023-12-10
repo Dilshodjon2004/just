@@ -1,0 +1,66 @@
+@use "../abstract/variables";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+body {
+  background-color: variables.$primary-bg-color;
+  padding-bottom: 40px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.underline-animation {
+  display: block;
+  position: relative;
+  padding: 0.2rem 0;
+}
+
+.underline-animation::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: variables.$border-dark-color;
+  opacity: 0;
+  transition: opacity 1s, transform 1s;
+}
+
+.underline-animation:hover::after,
+.underline-animation:focus::after {
+  opacity: 1;
+  transform: translate3d(0, 0.2em, 0);
+}
+
+.underline-animation::after {
+  opacity: 1;
+  transform: scale(0);
+  transform-origin: center;
+}
+
+.underline-animation:hover::after,
+.underline-animation:focus::after {
+  transform: scale(1);
+}
+
+footer .underline-animation::after {
+  background-color: variables.$border-dark-color;
+}

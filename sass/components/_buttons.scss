@@ -1,0 +1,36 @@
+@import "../abstract/variables";
+
+.store-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: transparent;
+  padding: 12px 20px;
+  border-radius: 100px;
+  width: 200px;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    background-color: variables.$border-dark-color;
+    .button-icon i {
+      color: variables.$light-text-color;
+    }
+    .button-text .caption,
+    .button-text .link {
+      color: variables.$light-text-color;
+    }
+  }
+}
+
+.button-icon {
+  width: 36px;
+  height: 36px;
+}
+
+.button-icon i {
+  font-size: 36px;
+  color: variables.$dark-text-color;
+}
+
+.button-text {
+  text-align: start;
+}

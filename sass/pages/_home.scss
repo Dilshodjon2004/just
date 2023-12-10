@@ -1,0 +1,148 @@
+@use "../abstract/variables";
+@import "../components/navbar";
+@import "../components/carousel";
+@import "../components/buttons";
+@import "../components/footer";
+
+.hero__container {
+  background: url("../../assets/images/home/hero.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: auto;
+  width: 100%;
+  border-radius: 40px;
+  padding: 100px;
+}
+
+.hero__text {
+  inline-size: 530px;
+}
+
+.hero .heading-1 {
+  overflow-wrap: break-word;
+  color: variables.$light-text-color;
+}
+
+.hero .heading-1 span {
+  color: variables.$accent-text-color;
+  font-style: italic;
+}
+
+.hero .medium {
+  color: variables.$light-text-color;
+  padding: 40px 0;
+}
+
+.hero .btn {
+  display: inline-block;
+  padding: 20px 65px;
+  border-radius: 100px;
+  background-color: variables.$primary-bg-color;
+
+  &:hover {
+    .btn-items-wrapper img {
+      transition: all 0.3s ease-in-out;
+      opacity: 1;
+    }
+  }
+}
+
+.hero .btn-items-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn-items-wrapper img {
+  opacity: 0;
+}
+
+.testimonials {
+  padding-top: 30px;
+}
+
+.clients-images {
+  margin-top: 40px;
+  display: flex;
+  gap: 40px;
+}
+
+.clients-images img {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+  transform: scale(1);
+  &:hover {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);   
+  }
+}
+
+.images-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.images-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.reverse {
+  flex-direction: column-reverse;
+}
+
+.big {
+  width: 660px;
+  height: 590px;
+  border-radius: 20px;
+  
+}
+
+.small {
+  width: 660px;
+  height: 430px;
+  border-radius: 20px;
+}
+
+.apps {
+  margin: 100px 0;
+}
+
+.apps-items-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+  align-items: center;
+}
+
+.apps-text-wrapper {
+  inline-size: 630px;
+}
+
+.apps-text-wrapper .buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.apps .medium {
+  margin: 40px 0;
+}
+
+.apps-image-wrapper {
+  width: 630px;
+}
+
+.apps-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

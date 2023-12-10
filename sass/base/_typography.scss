@@ -1,0 +1,74 @@
+@use "../abstract/variables";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
+
+html,
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.heading-1 {
+  color: variables.$dark-text-color;
+  font-size: 72px;
+  font-weight: 600;
+  line-height: 105%;
+}
+
+.heading-1-accent {
+  color: variables.$dark-text-color;
+  font-size: 72px;
+  font-weight: 600;
+  font-style: italic;
+  line-height: 105%;
+}
+
+.heading-2 {
+  color: variables.$dark-text-color;
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 125%;
+}
+
+.heading-2-accent {
+  color: variables.$dark-text-color;
+  font-size: 60px;
+  font-weight: 600;
+  font-style: italic;
+  line-height: 125%;
+}
+
+.heading-3 {
+  color: variables.$dark-text-color;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 125%;
+}
+
+.medium {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.caption {
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 140%;
+}
+
+.link {
+  color: variables.$dark-text-color;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+.burger-link {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 125%;
+}
+
+.italic {
+  color: variables.$accent-text-color;
+  font-style: italic;
+}
